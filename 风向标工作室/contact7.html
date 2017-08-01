@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet"> 
+    
+     <!--一件返回插件-->
+   <script src="js/jquery-1.8.3.min.js"></script>
+       <style type="text/css">
+        body {
+        font-size:12px;
+        }
+        #scroll {
+        position:fixed; top:300px; right:100px;
+        }
+        .scrollItem {
+        width:20px; height:105px;border:#e1e1e1 1px solid; cursor:pointer; text-align:center; padding-top:10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var speed = 800;//滚动速度
+			var h=document.body.clientHeight;		
+            //回到顶部
+            $("#toTop").click(function () {
+			  	$('html,body').animate({
+					scrollTop: '0px'
+			},
+			speed);			
+            });
+        });
+    </script>
+    <!--百度地图-->
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F50johzGP2j8WXCvEH3bkopPDZ6T47Kc"></script>
+</head>
+
+<body>
+    <header id="header">
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/lo-1.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about2.html">关于我们</a></li>
+                        <li><a href="services3.html">服务</a></li>
+                        <li><a href="portfolio4.html">设计方案</a></li>
+                        <li class="dropdown">
+                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pricing5-2.html">定价</a></li>
+                                <li><a href="href="404.html"">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="contact7.html">联系</a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/nav-->
+    </header>
+    <!--/header-->
+
+    <section id="contact-info">
+        <div class="center">                
+            <h2>如何寻找我们？</h2>
+            <p class="lead">联系资料</p>
+        </div>
+        <div class="gmap-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center">
+                        <div class="gmap">
+                        	<div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    <p style="color:red;font-weight:600">地图生成工具基于百度地图JS api v2.0版本开发，使用请申请密匙。
+      <a href="http://developer.baidu.com/map/index.php?title=jspopular/guide/introduction" style="color:#2f83c7" target="_blank">了解如何申请密匙</a>
+      <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank">申请密匙</a>
+    </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 map-content">
+                        <ul class="row">
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>工作室1区</h5>
+                                    <p>北京市海淀区 <br>
+                                    环保科技园温阳路7号院</p>
+                                    <p>电话:01-898-2847 <br>
+                                    1350979495@gmail.com</p>
+                                </address>
+
+                                <address>
+                                    <h5>工作室2区</h5>
+                                    <p>上海市浦东新区 <br>
+                                    川沙路6999号28幢2201室</p>                                
+                                    <p>电话:021-898-2847 <br>
+                                    1350@qq.com</p>
+                                </address>
+                            </li>
+
+
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>工作室3区</h5>
+                                    <p>甘肃省兰州市 <br>
+                                    雁滩区万达广场A座805室</p>
+                                    <p>电话:0931-898-2847 <br>
+                                    13509@qq.com</p>
+                                </address>
+
+                                <address>
+                                    <h5>工作室4区</h5>
+                                    <p>广东省深圳市<br>
+                                    南山区科技园北区朗山路8号</p>
+                                    <p>电话:0755-898-2847 <br>
+                                    135097@163.com</p>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="contact-page">
+        <div class="container">
+            <div class="center">        
+                <h2>查询</h2>
+                <p class="lead">我们诚挚为您服务</p>
+            </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>名称 *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>电子邮箱 *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>电话</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>公司名称</label>
+                            <input type="text" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>要求 *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>咨询信息 *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">提交信息</button>
+                        </div>
+                    </div>
+                </form> 
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
+
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>工作室</h3>
+                        <ul>
+                            <li><a href="404.html">关于我们</a></li>
+                            <li><a href="404.html">加入我们</a></li>
+                            <li><a href="404.html">团队见面</a></li>
+                            <li><a href="404.html">版权</a></li>
+                            <li><a href="404.html">使用条款</a></li>
+                            <li><a href="404.html">隐私权政策</a></li>
+                            <li><a href="404.html">联系我们</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>支持</h3>
+                        <ul>
+                            <li><a href="404.html">常见问题解答</a></li>
+                            <li><a href="404.html">博客</a></li>
+                            <li><a href="404.html">论坛</a></li>
+                            <li><a href="404.html">参考案例</a></li>
+                            <li><a href="404.html">退款政策</a></li>
+                            <li><a href="404.html">授权通道</a></li>
+                            <li><a href="404.html">计费系统</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                       <h3>开发商</h3>
+                        <ul>
+                            <li><a href="404.html">主题</a></li>
+                            <li><a href="404.html">新产品</a></li>
+                            <li><a href="404.html">插件开发</a></li>
+                            <li><a href="404.html">Web 开发</a></li>
+                            <li><a href="404.html">SEO 营销</a></li>
+                            <li><a href="404.html">软文推广</a></li>
+                            <li><a href="404.html">Email 营销</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                       <h3>合作伙伴</h3>
+                        <ul>
+                            <li><a href="404.html">AQ精英</a></li>
+                            <li><a href="404.html">学学网</a></li>
+                            <li><a href="404.html">w3c联盟</a></li>
+                            <li><a href="404.html">动漫视频</a></li>
+                            <li><a href="404.html">时光设计</a></li>
+                            <li><a href="404.html">设计达人网</a></li>
+                            <li><a href="404.html">爱好者联盟</a></li>
+                        </ul>
+                    </div>    
+                </div>	
+                <!--/.col-md-3-->
+            </div>
+        </div>
+    </section>
+    <!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017  ll 风向工作室版权所有.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="404.html">首页</a></li>
+                        <li><a href="404.html">关于我们</a></li>
+                        <li><a href="404.html">常见问题解答</a></li>
+                        <li><a href="404.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+    
+    <!--一键返回顶部-->
+    <div id="scroll">
+        <div class="scrollItem" id="toTop">回到顶部</div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+
+ <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.181058,40.064349),19);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+  
+</html>

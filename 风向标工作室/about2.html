@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    
+	 <!--一件返回插件-->
+   <script src="js/jquery-1.8.3.min.js"></script>
+       <style type="text/css">
+        body {
+        font-size:12px;
+        }
+        #scroll {
+        position:fixed; top:300px; right:100px;
+        }
+        .scrollItem {
+        width:20px; height:105px;border:#e1e1e1 1px solid; cursor:pointer; text-align:center; padding-top:10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var speed = 800;//滚动速度
+			var h=document.body.clientHeight;		
+            //回到顶部
+            $("#toTop").click(function () {
+			  	$('html,body').animate({
+					scrollTop: '0px'
+			},
+			speed);			
+            });
+        });
+    </script>
+    
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+      
+</head>
+
+<body>
+
+    <header id="header">
+   		<!--开始-->
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/lo-1.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li class="active"><a href="about2.html">关于我们</a></li>
+                        <li><a href="services3.html">服务</a></li>
+                        <li><a href="portfolio4.html">设计方案</a></li>
+                        <li class="dropdown">
+                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pricing5-2.html">定价</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact7.html">联系</a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>	
+	<!--/header-->
+
+    <section id="about-us">
+        <div class="container">
+			<div class="center wow fadeInDown">
+				<h2>关于风向标</h2>
+				<p class="lead">风向标<br>以策略 · 设计 · 技术 · 服务为核心 · 为客户持续创造价值</p>
+			</div>
+			
+			<!-- about us slider -->
+			<div id="about-slider">
+				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+				  	<ol class="carousel-indicators visible-xs">
+					    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-slider" data-slide-to="1"></li>
+					    <li data-target="#carousel-slider" data-slide-to="2"></li>
+				  	</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
+					   </div>
+					   <div class="item">
+							<img src="images/slider_two.jpg" class="img-responsive" alt=""> 
+					   </div> 
+					   <div class="item">
+							<img src="images/slider_three.jpg" class="img-responsive" alt=""> 
+					   </div> 
+					</div>
+					
+					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i> 
+					</a>
+					
+					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i> 
+					</a>
+				</div> 
+			</div>
+			<!--about-slider-->			
+			
+			<!-- Our Skill -->
+			<div class="skill-wrap clearfix">
+			
+				<div class="center wow fadeInDown">
+					<h2>专业能力</h2>
+					<p class="lead">用技术见证我们的完美追求</p>
+				</div>
+				
+				<div class="row">
+		
+					<div class="col-sm-3">
+						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+							<div class="joomla-skill">                                   
+								<p><em>80%</em></p>
+								<p>平面设计</p>
+							</div>
+						</div>
+					</div>
+					
+					 <div class="col-sm-3">
+						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<div class="html-skill">                                  
+								<p><em>95%</em></p>
+								<p>HTML</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-3">
+						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+							<div class="css-skill">                                    
+								<p><em>85%</em></p>
+								<p>CSS</p>
+							</div>
+						</div>
+					</div>
+					
+					 <div class="col-sm-3">
+						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+							<div class="wp-skill">
+								<p><em>90%</em></p>
+								<p>Js</p> <!--Wordpress一个注重美学、易用性和网络标准的个人信息发布平台。-->                                    
+							</div>
+						</div>
+					</div>
+					
+				</div>
+	
+           </div>
+            <!--/.our-skill-->
+			
+
+			<!-- our-team -->
+			<div class="team">
+				<div class="center wow fadeInDown">
+					<h2>团队</h2>
+					<p class="lead">我们专注于网站建设，有着丰富经验的工作室，<br>为各行网站(网页)制作、网站(网页)设计、
+网站优化提供优质、持续稳定的服务！</p>
+				</div>
+
+				<div class="row clearfix">
+					<div class="col-md-4 col-sm-6">	
+						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="404.html"><img class="media-object" src="images/man1.jpg" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4>苏留</h4>
+									<h5>设计总监</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="404.html">Web</a></li>
+										<li class="btn"><a href="404.html">Ui</a></li>
+										<li class="btn"><a href="404.html">平面设计</a></li>
+										<li class="btn"><a href="404.html">Photoshop</a></li>
+									</ul>
+									
+									<ul class="social_icons">
+										<li><a href="404.html"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="404.html"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="404.html"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<p>中国知名WEB设计师。毕业于中国传媒大学美术系。网站设计从业时间为2005年至今。目前加入风向标工作室，专注高端Web设计。</p>
+						</div>
+					</div>
+					<!--col-lg-4 -->
+					
+					
+					<div class="col-md-4 col-sm-6 col-md-offset-2">	
+						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="404.html"><img class="media-object" src="images/man4.jpg" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4>汉诺·凯霍</h4>
+									<h5>欧洲工业设计师</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="404.html">Web</a></li>
+										<li class="btn"><a href="404.html">Ui</a></li>
+										<li class="btn"><a href="404.html">Ux</a></li><!--用户体验设计-->
+										<li class="btn"><a href="404.html">Photoshop</a></li>
+									</ul>
+									<ul class="social_icons">
+										<li><a href="404.html"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="404.html"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="404.html"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<!--/.media -->
+							<p>曾主持完成国内知名企，国际著名企业的设计项目100余项，其创造的设计价值约1000万人民币，市场价值约为十亿人民币。其作品在通讯终端和设备、医疗器械、IT周边、家电、数码电子、玩具等行业树立了广泛的影响。</p>
+						</div>
+					</div>				
+				</div> 
+				
+				<div class="row team-bar">
+					<div class="first-one-arrow hidden-xs">
+						<hr>
+					</div>
+					<div class="first-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-up"></i>
+					</div>
+					<div class="second-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-down"></i>
+					</div>
+					<div class="third-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-up"></i>
+					</div>
+					<div class="fourth-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-down"></i>
+					</div>
+				</div>
+				<!--skill_border-->       
+
+				<div class="row clearfix">   
+					<div class="col-md-4 col-sm-6 col-md-offset-2">	
+						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<!--媒体 media-->
+							<div class="media">
+								<div class="pull-left">
+									<a href="404.html"><img class="media-object" src="images/man3.jpg" alt=""></a>
+								</div>
+
+								<div class="media-body">
+									<h4>李自行</h4>
+									<h5>风向标设计 执行总监、合伙人</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="404.html">Web</a></li>
+										<li class="btn"><a href="404.html">Ui</a></li>
+										<li class="btn"><a href="404.html">产品运营</a></li>
+										<li class="btn"><a href="404.html">Photoshop</a></li>
+									</ul>
+									<ul class="social_icons">
+										<li><a href="404.html"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="404.html"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="404.html"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div><!--/媒体.media -->
+							<p>5年以上国内外知名设计机构设计工作经验，现任风向标商业创新设计机构(上海)设计执行总监、合伙人。</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-md-offset-2">
+						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="404.html"><img class="media-object" src="images/man5.jpg" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4>张载伟</h4>
+									<h5>设计总裁</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="404.html">Web</a></li>
+										<li class="btn"><a href="404.html">产品体验</a></li>
+										<li class="btn"><a href="404.html">产品交互</a></li>
+										<li class="btn"><a href="404.html">Photoshop</a></li>
+									</ul>
+									<ul class="social_icons">
+										<li><a href="404.html"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="404.html"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="404.html"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div><!--/.技能介绍media -->
+							<p>曾作为管理咨询顾问，涉足领域主要包括信息化规划、流程管理、知识管理、公司治理等。</p>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<!--部分section-->
+		</div>
+   </section>	
+    <!--/about-us-->
+	
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>工作室</h3>
+                        <ul>
+                            <li><a href="404.html">关于我们</a></li>
+                            <li><a href="404.html">加入我们</a></li>
+                            <li><a href="404.html">团队见面</a></li>
+                            <li><a href="404.html">版权</a></li>
+                            <li><a href="404.html">使用条款</a></li>
+                            <li><a href="404.html">隐私权政策</a></li>
+                            <li><a href="404.html">联系我们</a></li>
+                        </ul>
+                    </div>    
+                </div>       	
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                       <h3>支持</h3>
+                        <ul>
+                            <li><a href="404.html">常见问题解答</a></li>
+                            <li><a href="404.html">博客</a></li>
+                            <li><a href="404.html">论坛</a></li>
+                            <li><a href="404.html">参考案例</a></li>
+                            <li><a href="404.html">退款政策</a></li>
+                            <li><a href="404.html">授权通道</a></li>
+                            <li><a href="404.html">计费系统</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>开发商</h3>
+                        <ul>
+                            <li><a href="404.html">主题</a></li>
+                            <li><a href="404.html">新产品</a></li>
+                            <li><a href="404.html">插件开发</a></li>
+                            <li><a href="404.html">Web 开发</a></li>
+                            <li><a href="404.html">SEO 营销</a></li>
+                            <li><a href="404.html">软文推广</a></li>
+                            <li><a href="404.html">Email 营销</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>合作伙伴</h3>
+                        <ul>
+                            <li><a href="404.html">AQ精英</a></li>
+                            <li><a href="404.html">学学网</a></li>
+                            <li><a href="404.html">w3c联盟</a></li>
+                            <li><a href="404.html">动漫视频</a></li>
+                            <li><a href="404.html">时光设计</a></li>
+                            <li><a href="404.html">设计达人网</a></li>
+                            <li><a href="404.html">爱好者联盟</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <!--/.col-md-3-->
+            </div>
+        </div>
+    </section>
+    <!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017  ll 风向标工作室版权所有.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="404.html">首页</a></li>
+                        <li><a href="404.html">关于我们</a></li>
+                        <li><a href="404.html">常见问题解答</a></li>
+                        <li><a href="404.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--一键返回顶部-->
+    <div id="scroll">
+        <div class="scrollItem" id="toTop">回到顶部</div>
+    </div>
+</body>
+</html>

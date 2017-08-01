@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>定价</title>
+		
+		 <!--一件返回插件-->
+   <script src="js/jquery-1.8.3.min.js"></script>
+       <style type="text/css">
+        body {
+        font-size:12px;
+        }
+        #scroll {
+        position:fixed; top:300px; right:100px;
+        }
+        .scrollItem {
+        width:20px; height:105px;border:#e1e1e1 1px solid; cursor:pointer; text-align:center; padding-top:10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var speed = 800;//滚动速度
+			var h=document.body.clientHeight;		
+            //回到顶部
+            $("#toTop").click(function () {
+			  	$('html,body').animate({
+					scrollTop: '0px'
+			},
+			speed);			
+            });
+        });
+    </script>
+
+		<!-- core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/prettyPhoto.css" rel="stylesheet">
+		    <!--PrettyPhoto是一款基于jQuery的轻量级的lightbox图片浏览插件，它不仅支持图片播放 ， 而且还支持视频、flash、YouTuBe、Iframe及ajax。-->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!--animate.css 是一个来自国外的 CSS3 动画库，它预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果，几乎包含了所有常见的动画效果。-->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet"><!--bootstrap-->
+	</head>
+
+	<body>
+
+		<header id="header">
+			<!--开始-->
+			<nav class="navbar navbar-inverse" role="banner">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+						<a class="navbar-brand" href="index.html"><img src="images/lo-1.png" alt="logo"></a>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-right">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="about2.html">关于我们</a>
+							</li>
+							<li>
+								<a href="services3.html">服务</a>
+							</li>
+							<li>
+								<a href="portfolio4.html">设计方案</a>
+							</li>
+							<li class="dropdown active">
+								<a href="404.html" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li class="active">
+										<a href="pricing5-2.html">定价</a>
+									</li>
+									<li>
+										<a href="404.html">404</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="contact7.html">联系</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!--/nav-->
+		</header>
+		<!--/header-->
+
+		<section class="pricing-page">
+			<div class="container">
+				<div class="center">
+					<h2>价格信息表</h2>
+					<p class="lead">根据您的预算制定开发方案。</p>
+				</div>
+				<div class="pricing-area text-center">
+					<div class="row">
+						<div class="col-sm-4 plan price-one wow fadeInDown">
+							<ul>
+								<li class="heading-one">
+									<h1>个人网站</h1>
+									<span>$126</span>
+								</li>
+								<li>响应式设计</li>
+								<li>精美模板</li>
+								<li>免费空间</li>
+								<li>免费域名</li>
+								<li>免费维护</li>
+								<li class="plan-action">
+									<a href="" class="btn btn-primary">咨询</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-sm-4 plan price-two wow fadeInDown">
+							<ul>
+								<li class="heading-two">
+									<h1>企业网站</h1>
+									<span>$399起</span>
+								</li>
+								<li>响应式设计</li>
+								<li>精美模板</li>
+								<li>免费空间</li>
+								<li>企业邮箱</li>
+								<li>无忧售后</li>
+								<li class="plan-action">
+									<a href="" class="btn btn-primary">咨询</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-sm-4 plan price-three wow fadeInDown">
+							<img src="images/ribon_one.png">
+							<ul>
+								<li class="heading-three">
+									<h1>私人定制</h1>
+									<span>咨询我们</span>
+								</li>
+								<li>响应式设计</li>
+								<li>功能完善</li>
+								<li>全程服务</li>
+								<li>可二次开发</li>
+								<li>无忧售后</li>
+								<li class="plan-action">
+									<a href="" class="btn btn-primary">咨询</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--pricing-area-->
+			</div>
+		</section>
+		<!--pricing-page-->
+
+		<section id="bottom">
+			<div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h3>工作室</h3>
+							<ul>
+								<li>
+									<a href="404.html">关于我们</a>
+								</li>
+								<li>
+									<a href="404.html">加入我们</a>
+								</li>
+								<li>
+									<a href="404.html">团队见面</a>
+								</li>
+								<li>
+									<a href="404.html">版权</a>
+								</li>
+								<li>
+									<a href="404.html">使用条款</a>
+								</li>
+								<li>
+									<a href="404.html">隐私权政策</a>
+								</li>
+								<li>
+									<a href="404.html">联系我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h3>支持</h3>
+							<ul>
+								<li>
+									<a href="404.html">常见问题解答</a>
+								</li>
+								<li>
+									<a href="404.html">博客</a>
+								</li>
+								<li>
+									<a href="404.html">论坛</a>
+								</li>
+								<li>
+									<a href="404.html">参考案例</a>
+								</li>
+								<li>
+									<a href="404.html">退款政策</a>
+								</li>
+								<li>
+									<a href="404.html">授权通道</a>
+								</li>
+								<li>
+									<a href="404.html">计费系统</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h3>开发商</h3>
+							<ul>
+								<li>
+									<a href="404.html">主题</a>
+								</li>
+								<li>
+									<a href="404.html">新产品</a>
+								</li>
+								<li>
+									<a href="404.html">插件开发</a>
+								</li>
+								<li>
+									<a href="404.html">Web 开发</a>
+								</li>
+								<li>
+									<a href="404.html">SEO 营销</a>
+								</li>
+								<li>
+									<a href="404.html">软文推广</a>
+								</li>
+								<li>
+									<a href="404.html">Email 营销</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--/.col-md-3-->
+
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h3>合作伙伴</h3>
+							<ul>
+								<li>
+									<a href="404.html">AQ精英</a>
+								</li>
+								<li>
+									<a href="404.html">学学网</a>
+								</li>
+								<li>
+									<a href="404.html">w3c联盟</a>
+								</li>
+								<li>
+									<a href="404.html">动漫视频</a>
+								</li>
+								<li>
+									<a href="404.html">时光设计</a>
+								</li>
+								<li>
+									<a href="404.html">设计达人网</a>
+								</li>
+								<li>
+									<a href="404.html">爱好者联盟</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--bottom-->
+
+		<footer id="footer" class="midnight-blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						&copy; 2017 ll 风向标工作室版权所有.
+					</div>
+					<div class="col-sm-6">
+						<ul class="pull-right">
+							<li>
+								<a href="404.html">首页</a>
+							</li>
+							<li>
+								<a href="404.html">关于我们</a>
+							</li>
+							<li>
+								<a href="404.html">常见问题解答</a>
+							</li>
+							<li>
+								<a href="404.html">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/#footer-->
+
+		<script src="js/jquery.js"></script>
+		<!--<script type="text/javascript">
+			$('.carousel').carousel()
+		</script>-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.prettyPhoto.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/wow.min.js"></script>
+		<!--一键返回顶部-->
+    <div id="scroll">
+        <div class="scrollItem" id="toTop">回到顶部</div>
+    </div>
+	</body>
+</html>

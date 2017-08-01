@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风向标设计</title>
+	
+	<!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+   <!--一件返回插件-->
+   <script src="js/jquery-1.8.3.min.js"></script>
+       <style type="text/css">
+        body {
+        font-size:12px;
+        }
+        #scroll {
+        position:fixed; top:300px; right:100px;
+        }
+        .scrollItem {
+        width:20px; height:105px;border:#e1e1e1 1px solid; cursor:pointer; text-align:center; padding-top:10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var speed = 800;//滚动速度
+			var h=document.body.clientHeight;		
+            //回到顶部
+            $("#toTop").click(function () {
+			  	$('html,body').animate({
+					scrollTop: '0px'
+			},
+			speed);			
+            });
+        });
+    </script>
+</head>
+
+<body class="homepage">
+
+
+    <header id="header">
+		<!--导航栏navbar-->
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="images/lo-1.png" alt="logo"></a>
+                </div>
+				<!--yemiandaohang-->
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">首页</a></li>
+                        <li><a href="about2.html">关于我们</a></li>
+                        <li><a href="services3.html">服务</a></li>
+                        <li><a href="portfolio4.html">设计方案</a></li>
+                        <li class="dropdown">
+                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pricing5-2.html">定价</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact7.html">联系</a></li>                        
+                    </ul>
+                </div>
+            </div>
+            <!--/.container容器-->
+        </nav>
+        <!--/nav-->
+		
+    </header>
+    <!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item active" style="background-image: url(images/shou/gujianzhu.png)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                            	<!--旋转图carousel-->
+                                <div class="carousel-content">
+                                	
+                                    <h1 class="animation animated-item-1">我们提供的不仅仅是一个网站</h1>
+                                    <h2 class="animation animated-item-2">不断探索视觉与体验的完美结合</h2>
+                                    <a class="btn-slide animation animated-item-3" href="404.html">阅读更多</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--项目item-->
+
+                <div class="item" style="background-image: url(images/shou/d2dcd0b40c20b.png)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">关于速广</h1>
+                                    <h2 class="animation animated-item-2">企业必备的网络营销团队</h2>
+                                    <a class="btn-slide animation animated-item-3" href="404.html">阅读更多</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(images/shou/d3c68ee1c2b.png)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">官网·品牌网站设计</h1>
+                                    <h2 class="animation animated-item-2">策划·设计·前端·程序开发一条龙服务</h2>
+                                    <a class="btn-slide animation animated-item-3" href="404.html">阅读更多</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section>
+	<!--dierqu-->				
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>服务范围</h2>
+                <p class="lead">从PC到移动互联网风向标工作室打造一个 <br>全方位的互联网营销体系 </p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-bullhorn"></i>
+                            <h2>高端网站设计</h2>
+                            <h3>响应式网站建设 · 网站策略开发   业务系统开发 · 域名注册申请</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-comments"></i>
+                            <h2>移动互联网建设</h2>
+                            <h3>移动网站建设  · 手机网站建设   交互设计开发 ·技术维护服务</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-cloud-download"></i>
+                            <h2>微信开发</h2>
+                            <h3>界面设计定制  · 方案策划执行    微信二次开发 · wap网站建设</h3>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-leaf"></i>
+                            <h2>网站运营维护</h2>
+                            <h3>网站优化推广 · 品牌推广策划  产品推广实施 · 策划执行方案</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-cogs"></i>
+                            <h2>官网·品牌网站设计</h2>
+                            <h3>策划 · 设计 · 前端 · 程序开发</h3>
+                        </div>
+                    </div>	
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-heart"></i>
+                            <h2>微商城 · 商城网站建设</h2>
+                            <h3>专业量身定制设计·定制功能 ·定制后台开发拥有资深开发团队</h3>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+                </div>
+            </div>   
+        </div>
+    </section>
+<!--dierqu-->	
+<!--disan-->
+    <section id="recent-works">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>最近的作品</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="#">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="404.html">客户案例</a></h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>   	
+    <!--/#recent-works-->
+
+    <section id="middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="skill">
+                        <h2>我们的技能</h2>
+                        <p>我们专注于网站建设，有着丰富经验的工作室，为各行网站(网页)制作、网站(网页)设计、
+网站优化提供优质、持续稳定的服务！</p>
+
+                        <div class="progress-wrap">
+                            <h3>平面设计</h3>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span class="bar-width">80%</span>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h3>HTML</h3>
+                            <div class="progress">
+                              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                               <span class="bar-width">95%</span>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h3>CSS</h3>
+                            <div class="progress">
+                              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                <span class="bar-width">85%</span>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h3>Js</h3><!--Wordpress一个注重美学、易用性和网络标准的个人信息发布平台。-->
+                            <div class="progress">
+                              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                <span class="bar-width">90%</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>               	
+                <!--/.col-sm-6-->
+
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="accordion">
+                        <h2>行业新闻</h2>
+                        <div class="panel-group" id="accordion1">
+                          <div class="panel panel-default">
+                            <div class="panel-heading active">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1"> 致力于提升客户品牌形象、实现客户商业目标!<i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                  <div class="media accordion-inner">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="images/123124.jpg">
+                                        </div>
+                                        <div class="media-body">
+                                             <h4>重要！关于com/.net域名实名认证通知 </h4>
+                                             <p>域名应通信管理局要求，在2016年7月18日早上8时之前购买的.com/.net域名需在2017年6月1日前提交所有者实名认证，否则，网站将会面临被停止解析，导致无法访问。</p>
+                                        </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">小程序功能一个接一个开放，这些事你一定要知道！<i class="fa fa-angle-right pull-right"></i></a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">日前，微信小程序首先静悄悄地修改了入口机制，开始支持长按识别二维码，这意味着创业者如果有好的策划，借路二维码图片分享，小程序终于可以在朋友圈刷屏了。 </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">大家都在说的小程序你真的懂它吗？ <i class="fa fa-angle-right pull-right"></i></a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">小程序出来已经有段时间了，这段时间小程序本身也经历了一个跌宕起伏的过程，从最初推出时各方争抢的火爆，发展到了前段时间的被各方爆。 </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">都到元宵了，该把网站“唤醒”了！<i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                              <div class="panel-body">转眼又到元宵了，你是不是还处于春节综合症中呢？正月酒吃完了吗？有收到红包吗？又给了多少红包呢？ </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+                   <div class="tab-wrap"> 
+                        <div class="media">
+                            <div class="parrent pull-left">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li class=""><a href="#tab1" data-toggle="tab" class="analistic-01">响应式网页设计</a></li>
+                                    <li class="active"><a href="#tab2" data-toggle="tab" class="analistic-02">三网合一网站建设</a></li>
+                                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">万人万店连锁微店系统</a></li>
+                                    <li class=""><a href="#tab4" data-toggle="tab" class="tehnical">企业微视频</a></li>
+                                    <li class=""><a href="#tab5" data-toggle="tab" class="tehnical">手机网站建设</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="parrent media-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab1">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="images/man2.jpg">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>智能跨平台网站　企业移动营销战略最关键一步</h2>
+                                                 <p>如果网站没有智能思维，无非适应移动设备丰富和革新的步伐，这样的网站可以存在多久？现在，你只需要一个网站，它能自动适应各种手机、平板和电脑，根据不同的浏览环境，自动调节至适应尺寸。无论未来移动设备如何花样翻新，您都可以一劳永逸解决网站在任何终端访问的兼容性问题！</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="tab-pane fade active in" id="tab2">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="images/man3.jpg">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>三网合一网站建设</h2>
+                                                 <p>基于企事业单位全面移动化时代的营销变革需求，联科创造性的开辟出“三网合一”的企业建站思路。企业可建设拥有电脑版、微信版、手机版的企业网站。实现跨屏营销，产品发布一步更新，电脑网络+移动网络一网打尽，满足企业的营销需求！
+                                                 </p>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab3">
+                                        <p>适用于APP和手机浏览器、微信、微博、QQ等移动社交平台的连锁微店商城系统
+帮助你：如何用新模式打造万人万店加盟开店平台，摒弃开专卖店和进驻商场的传统开店模式，破解传统终端销售渠道的困境，消化库存积压，加快现金流转。<br />帮助企业低成本、快速地在移动互联网上开出万家线上加盟微店的独立开店系统，大规模扩散品牌形象和知名度，全渠道帮助企业销售产品、提升销售额。随时随地开店，随时随刻开店，激活代理商线上线下全渠道拓展销售。</p></div>
+                                     
+                                     <div class="tab-pane fade" id="tab4">
+                                        <p>风向标工作室是一个集品牌策划、品牌改造设计、视频宣传制作于一体的高端品牌整合策划设计团队，致力于提供富有价值品牌整合与传播的服务商。<br />我们拥有一支稳定的充满创作激情的创意设计团队，通过我们的镜头和后期制作，让看是平凡的一次秀，或一个产品和一家企业，扬长避短找出他们最闪亮的一面，呈现给客户，提升产品和企业形象。<br />我们专注于我们的工作，因为我们知道，通过我们的镜头让企业或产品提高公众的印象度，就需要我们成为一群影像的工作狂，视觉表现的艺术家，创意的急先锋，我们为此努力着而且是快乐的努力着，因为我们热爱这份事业。</p>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab5">
+                                        <p>商家和企业面向消费者提供的应用和服务向3G平台迁移已是大势所趋，移动互联网必将比传统互联网具有更高的商业价值。手机网站具有让消费者随时、随地、随身访问的优势和方便快捷的不可取代的特点。而目前，手机正迅速成为人们最常用的上网方式，截至2013年6月底，我国手机网民规模达4.64亿，较2012年底增加约4379万人，网民中使用手机上网人群占比由74.5%提升至78.5%，超过台式电脑，成为我国网民的第一大上网终端。传统网站不适合通过手机访问，因此建立专供手机上网浏览的网站，让客户真正能实现实现随时、随地、随身的访问，成为了许多企业和商家的选择。</p>
+                                     </div>
+                                </div> 
+                            </div> 
+                        </div>      
+                    </div>              
+                </div>
+
+                <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                        <h2>推荐</h2>
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="images/testimonials1.png">
+                            </div>
+                            <div class="media-body">
+                                <p>业内知名工作室创始人</p>
+                                <span><strong>某个身份不明的人/</strong>学道人</span>
+                            </div>
+                         </div>
+
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="images/testimonials1.png">
+                            </div>
+                            <div class="media-body">
+                                <p>当代的年轻设计师需要用尝试不同的方式去思考，他们不能直接去接受现实，要有梦想、对于设计的梦想、有自己的想象力、要用设计去改变世界。 </p>
+                                <span><strong>工业设计总 监/</strong>Tristram</span>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="conatcat-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="pull-left">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2>资讯或寻求报价</h2>
+                            <p>联系我们风向标工作室——沟通人与人!如果您对我们的产品和服务有任何疑问,或期望进一步合作,请拨打电话：01-898-2847</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>工作室</h3>
+                        <ul>
+                            <li><a href="404.html">关于我们</a></li>
+                            <li><a href="404.html">加入我们</a></li>
+                            <li><a href="404.html">团队见面</a></li>
+                            <li><a href="404.html">版权</a></li>
+                            <li><a href="404.html">使用条款</a></li>
+                            <li><a href="404.html">隐私权政策</a></li>
+                            <li><a href="404.html">联系我们</a></li>
+                        </ul>
+                    </div>    
+                </div>               	
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>支持</h3>
+                        <ul>
+                            <li><a href="404.html">常见问题解答</a></li>
+                            <li><a href="404.html">博客</a></li>
+                            <li><a href="404.html">论坛</a></li>
+                            <li><a href="404.html">参考案例</a></li>
+                            <li><a href="404.html">退款政策</a></li>
+                            <li><a href="404.html">授权通道</a></li>
+                            <li><a href="404.html">计费系统</a></li>
+                        </ul>
+                    </div>    
+                </div>               	
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>开发商</h3>
+                        <ul>
+                            <li><a href="404.html">主题</a></li>
+                            <li><a href="404.html">新产品</a></li>
+                            <li><a href="404.html">插件开发</a></li>
+                            <li><a href="404.html">Web 开发</a></li>
+                            <li><a href="404.html">SEO 营销</a></li>
+                            <li><a href="404.html">软文推广</a></li>
+                            <li><a href="404.html">Email 营销</a></li>
+                        </ul>
+                    </div>    
+                </div>                	
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>合作伙伴</h3>
+                        <ul>
+                            <li><a href="404.html">AQ精英</a></li>
+                            <li><a href="404.html">学学网</a></li>
+                            <li><a href="404.html">w3c联盟</a></li>
+                            <li><a href="404.html">动漫视频</a></li>
+                            <li><a href="404.html">时光设计</a></li>
+                            <li><a href="404.html">设计达人网</a></li>
+                            <li><a href="404.html">爱好者联盟</a></li>
+                        </ul>
+                    </div>    
+                </div>               	
+                <!--/.col-md-3-->
+            </div>
+        </div>
+    </section>
+    <!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017  ll 风向标工作室版权所有.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="404.html">首页</a></li>
+                        <li><a href="404.html">关于我们</a></li>
+                        <li><a href="404.html">常见问题解答</a></li>
+                        <li><a href="404.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>  	
+    <!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+	<!--一键返回顶部-->
+    <div id="scroll">
+        <div class="scrollItem" id="toTop">回到顶部</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计方案</title>
+     <!--一件返回插件-->
+   <script src="js/jquery-1.8.3.min.js"></script>
+       <style type="text/css">
+        body {
+        font-size:12px;
+        }
+        #scroll {
+        position:fixed; top:300px; right:100px;
+        }
+        .scrollItem {
+        width:20px; height:105px;border:#e1e1e1 1px solid; cursor:pointer; text-align:center; padding-top:10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var speed = 800;//滚动速度
+			var h=document.body.clientHeight;		
+            //回到顶部
+            $("#toTop").click(function () {
+			  	$('html,body').animate({
+					scrollTop: '0px'
+			},
+			speed);			
+            });
+        });
+    </script>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+      
+   
+</head>
+
+<body>
+
+<header id="header">
+<!--开始-->
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/lo-1.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about2.html">关于我们</a></li>
+                        <li><a href="services3.html">服务</a></li>
+                        <li class="active"><a href="portfolio4.html">设计方案</a></li>
+                        <li class="dropdown">  
+                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pricing5-2.html">定价</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact7.html">联系</a></li>                        
+                    </ul>
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+        
+   </header>
+    <!--/header-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="center">
+               <h2>风向标</h2>
+               <p class="lead">设计是网站给人的第一印象，我们不仅专注技术，我们还懂设计！</p>
+            </div>
+ 
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="404.html" data-filter="*">所有产品</a></li>
+                <li><a class="btn btn-default" href="404.html" data-filter=".bootstrap">创造中</a></li>
+                <li><a class="btn btn-default" href="404.html" data-filter=".html">摄影</a></li>
+                <li><a class="btn btn-default" href="404.html" data-filter=".wordpress">Web 开发</a></li>
+            </ul>
+            <!--/#portfolio-filter-->
+
+            <div class="row">
+                <div class="portfolio-items">
+                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                      <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                     <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                     <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>        
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                      <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div>
+                    <!--/.portfolio-item-->
+          
+                    <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                      <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                      <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>         
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                     <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                     <h3><a href="404.html">客户案例</a> </h3>
+                                <p>我们一直秉持着诚意，为每一位顾客提供最优质的服务</p>
+                                <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div>
+                    <!--/.portfolio-item-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#portfolio-item-->
+    
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                       <h3>工作室</h3>
+                        <ul>
+                            <li><a href="404.html">关于我们</a></li>
+                            <li><a href="404.html">加入我们</a></li>
+                            <li><a href="404.html">团队见面</a></li>
+                            <li><a href="404.html">版权</a></li>
+                            <li><a href="404.html">使用条款</a></li>
+                            <li><a href="404.html">隐私权政策</a></li>
+                            <li><a href="404.html">联系我们</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>支持</h3>
+                        <ul>
+                            <li><a href="404.html">常见问题解答</a></li>
+                            <li><a href="404.html">博客</a></li>
+                            <li><a href="404.html">论坛</a></li>
+                            <li><a href="404.html">参考案例</a></li>
+                            <li><a href="404.html">退款政策</a></li>
+                            <li><a href="404.html">授权通道</a></li>
+                            <li><a href="404.html">计费系统</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>开发商</h3>
+                        <ul>
+                            <li><a href="404.html">主题</a></li>
+                            <li><a href="404.html">新产品</a></li>
+                            <li><a href="404.html">插件开发</a></li>
+                            <li><a href="404.html">Web 开发</a></li>
+                            <li><a href="404.html">SEO 营销</a></li>
+                            <li><a href="404.html">软文推广</a></li>
+                            <li><a href="404.html">Email 营销</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>合作伙伴</h3>
+                        <ul>
+                            <li><a href="404.html">AQ精英</a></li>
+                            <li><a href="404.html">学学网</a></li>
+                            <li><a href="404.html">w3c联盟</a></li>
+                            <li><a href="404.html">动漫视频</a></li>
+                            <li><a href="404.html">时光设计</a></li>
+                            <li><a href="404.html">设计达人网</a></li>
+                            <li><a href="404.html">爱好者联盟</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                     &copy; 2017  ll 风向标工作室版权所有.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="404.html">首页</a></li>
+                        <li><a href="404.html">关于我们</a></li>
+                        <li><a href="404.html">常见问题解答</a></li>
+                        <li><a href="404.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--一键返回顶部-->
+    <div id="scroll">
+        <div class="scrollItem" id="toTop">回到顶部</div>
+    </div>
+</body>
+</html>
